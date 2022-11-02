@@ -16,6 +16,7 @@
 
 # Lambda dependencies
 import string
+from tkinter.tix import INTEGER
 from tokenize import Number
 import boto3    # Python AWS SDK
 import json     # Used for handling API-based data.
@@ -54,10 +55,10 @@ def lambda_handler(event, context):
     # Complete the below code so that the appropriate 
     # incoming data is sent to the matching column in your DynamoDB table
     # --- Insert your code here ---
-    db_response = table.put_item(Item={'ResponsesID': Number, # <--- Insert the correct variable
+    db_response = table.put_item(Item={'ResponsesID': INTEGER, # <--- Insert the correct variable
                         'Name': string, # <--- Insert the correct variable
                         'Email': string, # <--- Insert the correct variable
-                        'Cell': Number, # <--- Insert the correct variable
+                        'Cell': INTEGER, # <--- Insert the correct variable
                         'Message': string # <--- Insert the correct variable
     })
     # -----------------------------
