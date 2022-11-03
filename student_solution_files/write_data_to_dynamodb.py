@@ -44,7 +44,7 @@ def lambda_handler(event, context):
     # ** Instantiate the DynamoDB service with the help of the boto3 library **
     
     # --- Insert your code here ---
-    dynamodb = boto3.client('dynamodb') # <--- Replace this value with your code.
+    dynamodb = boto3.resource('dynamodb') # <--- Replace this value with your code.
     # -----------------------------
     
     # Instantiate the table. Remember pass the name of the DynamoDB table created in step 4
