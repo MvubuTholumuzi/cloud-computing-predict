@@ -23,9 +23,9 @@ $(function () {
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             var json = {name: name, phone: phone, email: email, message: message}
             $.ajax({
-                // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
+                // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  --------
                 url: "https://j71cwbm1tf.execute-api.eu-west-1.amazonaws.com/default/Cloud_Computing",
-                // ------------------------------------------------------  
+                // ------------------------------------------------------
                 type: "POST",
                 data: JSON.stringify(json),
                 cache: false,
