@@ -9,7 +9,7 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            console.log('Capturing Data')
+          //  console.log('Capturing Data')
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
