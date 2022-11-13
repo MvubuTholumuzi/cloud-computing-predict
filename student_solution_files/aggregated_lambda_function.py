@@ -243,7 +243,7 @@ def lambda_handler(event, context):
 
 
     # Do not change the name of this variable
-    #db_response = None
+    db_response = None
     # -----------------------------
     
 
