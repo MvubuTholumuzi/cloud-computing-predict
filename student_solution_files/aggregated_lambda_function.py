@@ -243,7 +243,7 @@ def lambda_handler(event, context):
 
 
     # Do not change the name of this variable
-    db_response = None
+    #db_response = None
     # -----------------------------
     
 
@@ -274,13 +274,8 @@ def lambda_handler(event, context):
     # --- Insert your code here ---
 
     # Do not change the name of this variable
-    email_text =f'Good day , \n I see that you mentioned my C.V in your message. \
-               I am happy to forward you my C.V in response. \
-               If you have any other questions or C.V related queries please do get in touch. The projects I listed on my site only include \
-                    the ones not running in production. I have \
-                    several other projects that might interest you' 
-
-    
+    #email_text =f'Good day , \n I see that you mentioned my C.V in your message. \
+               
     # -----------------------------
             
 
@@ -292,7 +287,7 @@ def lambda_handler(event, context):
     # --- Insert your code here ---
     # Sample text that you would like to email to your recipient 
     # address from your sender address.
-    email_text = 'Hi, Thank you for viewing my portfolio.'
+    email_text = 'Good day, \n I see that you mentioned my C.V in your message. I am happy to forward you my C.V in response. If you have any other questions or C.V related queries please do get in touch. \n Please do let me know if you are interested - I am happy to forward them to you. \n The projects I listed on my site only include those not running in production. I have several other projects that might interest you. \n If there is anything else I can assist you with please let me know and I will set up a meeting for us to meet in person. \n Kind Regards, \n Tholumuzi Mvubu'
 
     # ** SES Functionality **
 
@@ -357,7 +352,7 @@ def lambda_handler(event, context):
         print(ses_response['MessageId'])
 
     # Do not change the name of this variable
-    ses_response = None
+    #ses_response = None
     
     # ...
 
